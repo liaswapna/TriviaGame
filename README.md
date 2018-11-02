@@ -7,7 +7,7 @@
 * ### [app.js](https://github.com/liaswapna/TriviaGame/blob/master/assets/javascript/app.js)
 
 ## Instructions
----
+
 * Trivia game that shows only one question until the player answers it or their time runs out.
 
 * If the player selects the correct answer, shows a screen congratulating them for choosing the right option. After a few seconds,it displays the next question without user input.
@@ -20,6 +20,6 @@
 * On the final screen,it shows the number of correct answers, incorrect answers, unanswered and an option to restart the game (without reloading the page).
 
 ## NOTE: 
----
+
 * [Watch the demo.](https://youtu.be/xhmmiRmxQ8Q)
 * [Game Link.](https://liaswapna.github.io/TriviaGame/)
