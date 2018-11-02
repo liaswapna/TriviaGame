@@ -28,6 +28,9 @@ body {
     border: 2px solid black;
     opacity: .8;
 }
+#correct-incorrect-container{
+    display: none;
+}
 #question-time-container{
     display: none;
 }
