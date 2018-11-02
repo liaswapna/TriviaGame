@@ -146,7 +146,7 @@ function displayGif(index,checkValue){
 		var paraElmt = $("<h2>").text("Correct!");
 		newDiv.append(paraElmt);
 		var url = "assets/images/"+questions[index].image;
-		var imageElmt = $("<img src='"+url+"'>");
+		var imageElmt = $("<img style = 'height:250px; width:400px;' src='"+url+"'>");
 		newDiv.append(imageElmt);
 		$("#gif-container").append(newDiv);
 		return newDiv;
@@ -159,7 +159,7 @@ function displayGif(index,checkValue){
 		var paraElmt2 = $("<h2>").text("The correct answer was: "+ questions[index][ans]);
 		newDiv.append(paraElmt2);
 		var url = "assets/images/"+questions[index].image;
-		var imageElmt = $("<img src='"+url+"'>");
+		var imageElmt = $("<img style = 'height:250px; width:400px;' src='"+url+"'>");
 		newDiv.append(imageElmt);
 		$("#gif-container").append(newDiv);
 		return newDiv;
@@ -171,7 +171,7 @@ function displayGif(index,checkValue){
 		var paraElmt2 = $("<h2>").text("The correct answer was: "+ questions[index][ans]);
 		newDiv.append(paraElmt2);
 		var url = "assets/images/"+questions[index].image;
-		var imageElmt = $("<img src='"+url+"'>");
+		var imageElmt = $("<img style = 'height:250px; width:400px;' src='"+url+"'>");
 		newDiv.append(imageElmt);
 		$("#gif-container").append(newDiv);
 		return newDiv;
@@ -185,7 +185,8 @@ function loadQuestion(questionIndex) {
 	$("#label1").text(q.option1);
 	$("#label2").text(q.option2);
 	$("#label3").text(q.option3);
-    $("#label4").text(q.option4);
+	$("#label4").text(q.option4);
+	$("#time").text("00:10");
 	intervalId = setInterval(waits,1000);
 };
 
