@@ -128,6 +128,16 @@ function waits(){
 	}
 };
 
+// funtion to shuffle the questions array
+function shuffleArray(){
+	for(i=0;i<questions.length;i++){
+		var j = Math.floor(Math.random()*questions.length);
+		var temp = questions[i];
+		questions[i] = questions[j];
+		questions[j] = temp;
+	}
+}
+
 // reset the values
 function myrReset(){
     time = 10;
@@ -135,7 +145,8 @@ function myrReset(){
     currentQuestion = 0;
     correctAns = 0;
     incorrectAns = 0;
-    unanswered = 0;
+	unanswered = 0;
+	shuffleArray();
 }
 
 // function to display gif image
